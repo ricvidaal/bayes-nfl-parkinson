@@ -26,13 +26,11 @@
 5. [Sampling Setup](#-sampling-setup)
 6. [Results](#-results)
 7. [Interpretation](#-interpretation)
-8. [Repository Structure](#-repository-structure)
-9. [Getting Started](#-getting-started)
-10. [Reproducibility](#-reproducibility)
-11. [Limitations](#-limitations)
-12. [Citation](#-citation)
-13. [Acknowledgments](#-acknowledgments)
-14. [Generative AI Use Disclosure](#-generative-ai-use-disclosure)
+8. [Reproducibility](#-reproducibility)
+9. [Limitations](#-limitations)
+10. [Citation](#-citation)
+11. [Acknowledgments](#-acknowledgments)
+12. [Generative AI Use Disclosure](#-generative-ai-use-disclosure)
 
 ---
 

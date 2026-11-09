@@ -56,7 +56,7 @@ Because age, sex and genetics can also shift NfL levels, the model adjusts for *
 
 <img width="695" height="300" alt="nfl_csf_plasma" src="https://github.com/user-attachments/assets/ee5dd82d-90c4-4dca-9b29-f71aa72a813f" />
 <p align="center">
-  <img src="docs/figures/nfl_csf_plasma.png"  width="70%">
+  <img src="docs/figures/nfl_csf_plasma.png" width="70%">
   <br>
   <em>Figure 1. Comparison of plasma and CSF NfL concentrations across experimental groups, illustrating their parallel increase and strong correlation.</em>
 </p>
@@ -84,14 +84,10 @@ Because age, sex and genetics can also shift NfL levels, the model adjusts for *
 
 > ⚠️ **PPMI data is not redistributed in this repository.** Access must be requested directly from PPMI under their data use agreement.
 
-<!--
-📍 FIGURE 2 — INSERT HERE
-File in paper: spaghetti_plot_hito1_real.png
-Caption: Spaghetti plot of individual MDS-UPDRS Part III trajectories against age
-at clinical visit in the PPMI cohort.
--->
+
+<img width="2400" height="1650" alt="spaghetti_plot_hito1_real" src="https://github.com/user-attachments/assets/159d1f34-48a9-4b92-8273-aaa62bccd95b" />
 <p align="center">
-  <img src="docs/figures/spaghetti_plot_hito1_real.png" alt="Spaghetti plot of MDS-UPDRS III trajectories" width="70%">
+  <img src="docs/figures/spaghetti_plot_hito1_real.png" width="70%">
   <br>
   <em>Figure 2. Spaghetti plot of individual MDS-UPDRS Part III trajectories against age at clinical visit in the PPMI cohort.</em>
 </p>
@@ -152,12 +148,6 @@ Supporting libraries: **Pandas** and **NumPy** for data handling and transformat
 
 All fixed-effect parameters converged: $\hat{R}$ values of **1.00–1.01**, high **bulk and tail ESS**, and low **MCSE**.
 
-<!--
-📍 TABLE 1 — INSERT HERE
-Table in paper: "MCMC Diagnostics for Fixed Effects Parameters"
-(Reproduced below in Markdown. Alternatively, replace with a screenshot, e.g. docs/figures/table1_mcmc_diagnostics.png)
--->
-
 **Table 1. MCMC diagnostics for fixed-effects parameters**
 
 | Parameter | | Mean | SD | 95% HDI | ESS | $\hat{R}$ |
@@ -171,28 +161,18 @@ Table in paper: "MCMC Diagnostics for Fixed Effects Parameters"
 
 ### 📉 Motor progression trajectories
 
-<!--
-📍 FIGURE 3 — INSERT HERE
-File in paper: bayesian_stratification_panel.png
-Caption: Posterior predictive motor progression trajectories by baseline NfL
-percentiles (A) and 95% HDI forest plot of fixed-effect parameters (B).
--->
+<img width="4200" height="1560" alt="bayesian_stratification_panel" src="https://github.com/user-attachments/assets/139f8605-20cb-4bda-bbde-0f057ec48d10" />
 <p align="center">
-  <img src="docs/figures/bayesian_stratification_panel.png" alt="Bayesian stratification panel" width="95%">
+  <img src="docs/figures/bayesian_stratification_panel.png" width="95%">
   <br>
   <em>Figure 3. Posterior predictive motor progression trajectories by baseline NfL percentiles (A) and 95% HDI forest plot of fixed-effect parameters (B).</em>
 </p>
 
 ### 🎯 The key parameter: $\beta_5$
 
-<!--
-📍 FIGURE 4 — INSERT HERE
-File in paper: beta5_posterior_real.png
-Caption: Posterior distribution of the interaction parameter (β5) confirming the
-acceleration of motor decline driven by baseline NfL.
--->
+<img width="2700" height="1500" alt="beta5_posterior_real" src="https://github.com/user-attachments/assets/5b4369de-f860-449b-b094-132b94f74794" />
 <p align="center">
-  <img src="docs/figures/beta5_posterior_real.png" alt="Posterior distribution of beta5" width="70%">
+  <img src="docs/figures/beta5_posterior_real.png" width="70%">
   <br>
   <em>Figure 4. Posterior distribution of the interaction parameter (β₅) confirming the acceleration of motor decline driven by baseline NfL.</em>
 </p>
@@ -217,52 +197,6 @@ acceleration of motor decline driven by baseline NfL.
 
 ---
 
-## 📁 Repository Structure
-
-> 🛠️ *Adjust this tree to match the actual contents of the repository.*
-
-```text
-nfl_biomarker_mcmc/
-├── data/                  # PPMI data goes here (NOT included, see "Data")
-├── notebooks/             # Data loading, filtering, modeling and analysis
-├── src/                   # (optional) reusable Python modules
-├── docs/
-│   └── figures/           # Figures used in the paper and in this README
-│       ├── nfl_csf_plasma.png
-│       ├── spaghetti_plot_hito1_real.png
-│       ├── bayesian_stratification_panel.png
-│       └── beta5_posterior_real.png
-├── requirements.txt
-└── README.md
-```
-
----
-
-## 🚀 Getting Started
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/ricvidaal/nfl_biomarker_mcmc.git
-cd nfl_biomarker_mcmc
-
-# 2. (Recommended) create a virtual environment
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-
-# 3. Install dependencies
-pip install -r requirements.txt
-```
-
-**Main dependencies:** `pymc`, `pandas`, `numpy`, and the usual plotting / diagnostics stack (e.g. `arviz`, `matplotlib`).
-
-**Run the analysis:**
-
-1. Request and download the data from [PPMI](https://www.ppmi-info.org/) and place it in `data/`.
-2. Run the data loading and filtering step (≥ 3 visits per patient).
-3. Fit the Bayesian model with PyMC (NUTS, 4 chains, 1,500 warm-up + 2,000 draws, `target_accept=0.95`).
-4. Inspect diagnostics ($\hat{R}$, ESS, MCSE) and generate the figures.
-
----
 
 ## 🔁 Reproducibility
 

@@ -21,8 +21,7 @@
 
 1. [TL ; DR](#-tldr)
 2. [Background](#-background)
-3. [Data](#-data)<img width="695" height="300" alt="nfl_csf_plasma" src="https://github.com/user-attachments/assets/ee5dd82d-90c4-4dca-9b29-f71aa72a813f" />
-
+3. [Data](#-data)
 4. [Model](#-model)
 5. [Sampling Setup](#-sampling-setup)
 6. [Results](#-results)
@@ -55,12 +54,7 @@ Parkinson's disease is a clinically heterogeneous neurodegenerative disorder wit
 
 Because age, sex and genetics can also shift NfL levels, the model adjusts for **age** and **sex**, and the data pipeline also considers **APOE ε4** carrier status and **GBA** mutations.
 
-<!--
-📍 FIGURE 1 — INSERT HERE
-File in paper: nfl_csf_plasma.png
-Caption: Comparison of plasma and CSF NfL concentrations across experimental groups,
-illustrating their parallel increase and strong correlation.
--->
+<img width="695" height="300" alt="nfl_csf_plasma" src="https://github.com/user-attachments/assets/ee5dd82d-90c4-4dca-9b29-f71aa72a813f" />
 <p align="center">
   <img src="docs/figures/nfl_csf_plasma.png" alt="Plasma vs CSF NfL correlation" width="70%">
   <br>

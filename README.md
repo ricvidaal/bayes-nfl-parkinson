@@ -4,7 +4,7 @@
 
 **Does baseline serum neurofilament light chain (NfL) predict how fast motor symptoms worsen in Parkinson's disease?**
 
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)
 ![PyMC](https://img.shields.io/badge/PyMC-Bayesian%20Modeling-blue)
 ![Sampler](https://img.shields.io/badge/Sampler-NUTS%20(HMC)-orange)
 ![Data](https://img.shields.io/badge/Data-PPMI-green)
@@ -19,9 +19,10 @@
 
 ## 📑 Table of Contents
 
-1. [TL;DR](#-tldr)
+1. [TL ; DR](#-tldr)
 2. [Background](#-background)
-3. [Data](#-data)
+3. [Data](#-data)<img width="695" height="300" alt="nfl_csf_plasma" src="https://github.com/user-attachments/assets/ee5dd82d-90c4-4dca-9b29-f71aa72a813f" />
+
 4. [Model](#-model)
 5. [Sampling Setup](#-sampling-setup)
 6. [Results](#-results)

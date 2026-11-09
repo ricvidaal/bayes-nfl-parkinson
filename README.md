@@ -56,7 +56,7 @@ Because age, sex and genetics can also shift NfL levels, the model adjusts for *
 
 <img width="695" height="300" alt="nfl_csf_plasma" src="https://github.com/user-attachments/assets/ee5dd82d-90c4-4dca-9b29-f71aa72a813f" />
 <p align="center">
-  <img src="docs/figures/nfl_csf_plasma.png" alt="Plasma vs CSF NfL correlation" width="70%">
+  <img src="docs/figures/nfl_csf_plasma.png"  width="70%">
   <br>
   <em>Figure 1. Comparison of plasma and CSF NfL concentrations across experimental groups, illustrating their parallel increase and strong correlation.</em>
 </p>
